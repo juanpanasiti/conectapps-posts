@@ -1,5 +1,5 @@
 from server.config import constants
-from server.database import blog_db
+from server.database.blog_db import blog_db
 from server.exceptions.db_exceptions import PopulatedDBError
 from server.helpers.external_interface import PostsExternalInterface
 from server.database.models.post_model import PostModel

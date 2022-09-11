@@ -29,3 +29,6 @@ class BlogDB:
             Base.metadata.create_all(self.engine)
         except Exception as ex:
             raise ConnectionDBError(str(ex))
+
+
+blog_db = BlogDB()

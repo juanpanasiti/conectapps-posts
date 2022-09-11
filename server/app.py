@@ -5,7 +5,7 @@ from datetime import datetime
 
 from server.api.v1 import router_v1
 # from server.config.log import TimedRoute
-from server.database import blog_db
+from server.database.blog_db import blog_db
 
 app = FastAPI(
     title='PostsConectApps',
