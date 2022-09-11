@@ -3,3 +3,9 @@
 
 # Python files
 **/__pycache__
+
+# Logs
+**/*.log
+
+# secrets
+.env
