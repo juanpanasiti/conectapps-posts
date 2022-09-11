@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import logging
 from datetime import datetime
 
-from server.api.v1 import router_v1
+from server.routes.v1 import router_v1
 # from server.config.log import TimedRoute
 from server.database.blog_db import blog_db
 
