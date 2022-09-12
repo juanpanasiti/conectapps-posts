@@ -1,6 +1,13 @@
+import logging
+
+
+logger = logging.getLogger()
+
+
 class PopulatedDBError(Exception):
     def __init__(self, msg, *args):
         super().__init__(args)
+        logger.error(msg)
         self.msg = msg
 
     def __str__(self):
@@ -10,6 +17,7 @@ class PopulatedDBError(Exception):
 class ConnectionDBError(Exception):
     def __init__(self, msg, *args):
         super().__init__(args)
+        logger.error(msg)
         self.msg = msg
 
     def __str__(self):
